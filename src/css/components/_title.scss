@@ -1,0 +1,112 @@
+// NEW CSS
+.c-title {
+    font-weight: bold;
+    line-height: 37px;
+    font-size: 24px;
+    text-align: center;
+    color: $color-black;
+    margin-bottom: 46px;
+    &-1 {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 62px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    &-2 {
+        text-align: center;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 38px;
+        color: $color-black;
+    }
+    &-3 {
+        font-style: normal;
+        font-weight: 265;
+        font-size: 36px;
+        line-height: 58px;
+        color: $color-black;
+        padding: 0;
+    }
+    &-4 {
+        color: $color-black;
+        font-size: 24px;
+        line-height: 43px;
+        font-weight: bold;
+    }
+    &-5 {
+        color: $color-black;
+        font-size: 16px;
+        line-height: 34px;
+        font-weight: bold;
+    }
+}
+@include breakpoint3 {
+    .c-title {
+        font-size: 16px;
+        line-height: 36px;
+        margin-bottom: 15px;
+        h2 {
+            font-size: 30px;
+            line-height: 47px;
+        }
+        p {
+            font-size: 20px;
+            line-height: 32px;
+        }
+        &-3 {
+            font-weight: 200;
+            font-size: 28px;
+            line-height: 45px;
+        }
+    }
+}
+.c-detail {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 27px;
+    color: #525254;
+    text-align: left;
+    &-1 {
+        font-style: normal;
+        font-weight: 200;
+        font-size: 24px;
+        line-height: 38px;
+        text-align: center;
+    }
+    &-2 {
+        font-style: normal;
+        font-weight: 265;
+        font-size: 36px;
+        line-height: 58px;
+        color: $color-black;
+        margin-top: 49px;
+    }
+}
+.title-form {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: normal;
+    margin-bottom: 10px;
+}
+.line-title {
+    height: 76px;
+    padding-top: 30px;
+    box-sizing: border-box;
+    position: relative;
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 30px;
+        height: 3px;
+        background: $color-black;
+    }
+}
+.title-error {
+    margin-bottom: 49px;
+}

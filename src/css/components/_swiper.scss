@@ -1,0 +1,15 @@
+.swiper-container {
+    position: relative;
+}
+.swiper-container.img-bottom {
+    pointer-events: none;
+}
+.swiper-pagination.col-xs-12 {
+    text-align: left;
+    right: 0;
+    left: 726px;
+    padding: 0;
+}
+.swiper-pagination-bullet-active {
+    background-color: $color-black;
+}

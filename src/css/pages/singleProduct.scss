@@ -1,0 +1,19 @@
+.single-product{
+  .product__description{
+    ul{
+      list-style: inherit;
+      padding-left: 19px;
+    }
+  }
+  .title__toggle{
+    cursor: pointer;
+  }
+  .selector__toggle{
+    .w-520{
+      display: none;
+    }
+    &.active .w-520{
+      display: block;
+    }
+  }
+}

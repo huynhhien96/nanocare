@@ -1,0 +1,16 @@
+.container {
+    margin: 0 auto;
+}
+@include breakpoint3 {
+    body {
+        min-width: 320px;
+    }
+}
+/* IMAGES COVER */
+.c-cover {
+    width: 100%;
+    position: relative;
+    img {
+        width: 100%;
+    }
+}

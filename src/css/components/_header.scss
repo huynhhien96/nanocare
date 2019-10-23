@@ -1,0 +1,25 @@
+/* HEADER */
+.c-header {
+  width: 100%;
+  margin: 0 auto;
+  height: 150px;
+  padding: 0 50px;
+  box-sizing: border-box;
+  .logo-page a{
+    display: block;
+  }
+}
+@include breakpoint3 {
+  .c-header {
+    background: $color-smoke;
+    padding: 0 20px;
+    position: relative;
+    height: 80px;
+    .logo-page {
+      width: 57px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,417 @@
+.account {
+    &__section {
+        &--tab {
+            margin: 0 auto;
+            border-bottom: 1px solid $color-gray;
+        }
+        .tab {
+            width: 250px;
+            height: 55px;
+            box-sizing: border-box;
+            background-color: $color-smoke;
+            position: relative;
+            top: 1px;
+            cursor: pointer;
+            border: 1px solid $color-gray;
+            &.active {
+                border: 1px solid $color-smoke;
+                border-top: 2px solid $color-pink;
+                border-bottom: 1px solid $color-white;
+                background-color: $color-white;
+                p {
+                    color: $color-pink;
+                }
+            }
+            &:nth-of-type(2) {
+                margin: 0 20px;
+            }
+            a {
+                display: block;
+                font-weight: 500;
+                padding: 14px 0;
+                text-align: center;
+            }
+            .c-detail {
+                margin: 0 auto;
+            }
+        }
+        &--content {
+            padding-top: 50px;
+            margin: 0 auto;
+            .content__tab {
+                display: none;
+                &--right {
+                    padding-left: 79px;
+                    .custom-checkbox {
+                        position: relative;
+                        margin-bottom: 35px;
+                        .label-checkbox {
+                            font-size: 14px;
+                            line-height: 27px;
+                            a {
+                                color: $color-pink;
+                            }
+                        }
+                    }
+                }
+                &--left {
+                    position: relative;
+                    border-right: 1px solid $color-gray;
+                    &::after {
+                        content: 'hoặc';
+                        background: #ffff;
+                        width: 32px;
+                        padding: 8px 0;
+                        font-size: 12px;
+                        font-style: italic;
+                        position: absolute;
+                        right: -17px;
+                        top: 40px;
+                        text-align: center;
+                    }
+                    .button-facebook {
+                        margin: 27px 0 35px;
+                    }
+                }
+                .form-control {
+                    margin-bottom: 30px;
+                    position: relative;
+                    max-width: 360px;
+                    label.error {
+                        position: absolute;
+                        bottom: -30px;
+                        left: 0;
+                    }
+                }
+                label {
+                    position: relative;
+                    font-size: 12px;
+                    font-weight: 500;
+                    &:hover {
+                        input[type=checkbox] {
+                            background-color: #ccc;
+                        }
+                    }
+                }
+                input[type=text], input[type=password] {
+                    width: 360px;
+                    padding: 14px 20px;
+                    color: #525254;
+                    &::placeholder {
+                        font-style: italic;
+                        color: $color-gray2;
+                    }
+                    &:focus, &:active {
+                        border: none;
+                        -webkit-box-shadow: 0 0 0 30px white inset !important;
+                        outline-color: $color-pink;
+                    }
+                }
+                &.active {
+                    display: block;
+                }
+                &.forgot_pass {
+                    .content__tab--right {
+                        padding: 0;
+                        label {
+                            float: left;
+                        }
+                        .text-noti {
+                            font-weight: 500;
+                            margin-bottom: 40px;
+                        }
+                    }
+                }
+                .error {
+                    color: #dc3545;
+                }
+            }
+        }
+        form.woocommerce-ResetPassword.lost_reset_password {
+            width: 100%;
+            button.button__submit {
+                width: 100%;
+            }
+        }
+    }
+}
+@include breakpoint3 {
+    .account {
+        &__section {
+            flex-direction: column-reverse;
+            position: relative;
+            &--tab {
+                margin-top: 24px;
+                width: 100%;
+                .container {
+                    width: 100%;
+                    padding: 0;
+                }
+            }
+            .tab {
+                width: 100%;
+                p {
+                    position: relative;
+                    color: $color-pink;
+                    &:after {
+                        content: '';
+                        position: absolute;
+                        top: 22px;
+                        right: 20px;
+                        width: 0;
+                        height: 0;
+                        border-left: 5px solid transparent;
+                        border-right: 5px solid transparent;
+                        border-bottom: 8px solid $color-gray;
+                    }
+                }
+                &.active {
+                    display: block;
+                    top: 8px;
+                    position: absolute;
+                    width: 100%;
+                    border: none;
+                    p:after {
+                        border-top: 8px solid $color-pink;
+                        border-bottom: none;
+                    }
+                }
+                &:nth-of-type(2) {
+                    margin: 0;
+                }
+                a {
+                    display: block;
+                    font-weight: 500;
+                    padding: 14px;
+                    text-align: left;
+                }
+                .c-detail {
+                    margin: 0 auto;
+                }
+            }
+            &--content {
+                padding-top: 70px;
+                .content__tab {
+                    display: none;
+                    &--right {
+                        padding-left: 0;
+                        padding-right: 0;
+                        .custom-checkbox {
+                            position: relative;
+                            margin-bottom: 20px;
+                            .label-checkbox {
+                                font-size: 10px;
+                                line-height: 19px;
+                                a {
+                                    color: $color-pink;
+                                }
+                            }
+                        }
+                    }
+                    &--left {
+                        position: relative;
+                        border-right: none;
+                        border-bottom: 1px solid $color-gray;
+                        padding: 0 0 28px;
+                        &::after {
+                            width: 45px;
+                            right: 0;
+                            left: 0;
+                            bottom: -16px;
+                            top: unset;
+                            margin: 0 auto;
+                        }
+                        .button-facebook {
+                            margin: 0px 0 10px;
+                        }
+                    }
+                    .form-control {
+                        margin-bottom: 20px;
+                        position: relative;
+                        max-width: 360px;
+                        label.error {
+                            position: absolute;
+                            bottom: -30px;
+                            left: 0;
+                        }
+                    }
+                    label {
+                        width: 100%;
+                        position: relative;
+                        font-size: 10px;
+                        font-weight: 500;
+                        &:hover {
+                            input[type=checkbox] {
+                                background-color: #ccc;
+                            }
+                        }
+                    }
+                    input[type=text], input[type=password] {
+                        width: 100%;
+                        padding: 14px 20px;
+                        color: #525254;
+                        font-size: 10px;
+                        box-sizing: border-box;
+                        border: 1px solid $color-gray;
+                        &::placeholder {
+                            font-style: italic;
+                            color: $color-gray2;
+                        }
+                        &:focus, &:active {
+                            border: none;
+                            -webkit-box-shadow: 0 0 0 30px white inset !important;
+                            outline-color: $color-pink;
+                        }
+                    }
+                    &.active {
+                        display: block;
+                        .c-title {
+                            display: none;
+                        }
+                    }
+                    &.forgot_pass {
+                        .content__tab--right {
+                            padding: 0;
+                            label {
+                                float: left;
+                            }
+                            .text-noti {
+                                font-weight: 500;
+                                margin-bottom: 40px;
+                            }
+                        }
+                    }
+                    .error {
+                        color: #dc3545;
+                    }
+                }
+            }
+            #frm-update-user-info {
+                margin-top: 20px;
+            }
+            .order-status-mb {
+                display: none;
+            }
+            .account-reset-pass {
+                padding: 20px 0;
+            }
+            form.woocommerce-ResetPassword.lost_reset_password {
+                width: 100%;
+                min-width: 320px;
+                padding: 20px;
+                button.button__submit {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+.styled-checkbox {
+    position: absolute;
+    opacity: 0;
+    & + label {
+      position: relative;
+      user-select: none;
+      cursor: pointer;
+      padding: 0;
+    }
+    // Box.
+    & + label:before {
+      content: '';
+      margin-right: 10px;
+      display: inline-block;
+      vertical-align: text-top;
+      width: 30px;
+      height: 30px;
+      background: #FBF5F3;
+      border: 1px solid #CBCBCB;
+    }
+    // Box checked
+    &:checked + label:before {
+      background: #FBF5F3;
+      border: 1px solid #CBCBCB;
+    }
+    // Disabled state label.
+    &:disabled + label {
+      color: #b8b8b8;
+      cursor: auto;
+    }
+    // Disabled box.
+    &:disabled + label:before {
+      box-shadow: none;
+      background: #ddd;
+    }
+    // Checkmark. Could be replaced with an image
+    &:checked + label:after {
+      content: '';
+      position: absolute;
+      left: 9px;
+      top: 18px;
+      background: $color-pink;
+      width: 2px;
+      height: 2px;
+      box-shadow:
+        -4px 0 0 $color-pink,
+        -2px 0 0 $color-pink,
+        2px 0 0 $color-pink,
+        4px 0 0 $color-pink,
+        4px -2px 0 $color-pink,
+        4px -4px 0 $color-pink,
+        4px -6px 0 $color-pink,
+        4px -8px 0 $color-pink,
+        4px -10px 0 $color-pink,
+        4px -12px 0 $color-pink,
+        4px -14px 0 $color-pink;
+      transform: rotate(45deg);
+    }
+}
+@include breakpoint3 {
+    .styled-checkbox {
+        position: absolute;
+        opacity: 0;
+        & + label {
+          position: relative;
+          user-select: none;
+          cursor: pointer;
+          padding: 0;
+        }
+        // Box.
+        & + label:before {
+          content: '';
+          margin-right: 10px;
+          display: inline-block;
+          vertical-align: text-top;
+          width: 20px;
+          height: 20px;
+          background: #FBF5F3;
+          border: 1px solid #CBCBCB;
+        }
+        // Box checked
+        &:checked + label:before {
+          background: #FBF5F3;
+          border: 1px solid #CBCBCB;
+        }
+        // Disabled state label.
+        &:disabled + label {
+          color: #b8b8b8;
+          cursor: auto;
+        }
+        // Disabled box.
+        &:disabled + label:before {
+          box-shadow: none;
+          background: #ddd;
+        }
+        // Checkmark. Could be replaced with an image
+        &:checked + label:after {
+            content: '';
+            position: absolute;
+            left: 4px;
+            top: 13px;
+            background: #E0B59F;
+            width: 2px;
+            height: 2px;
+            box-shadow: 0px 0 0 #E0B59F, -2px 0 0 #E0B59F, 2px 0 0 #E0B59F, 4px 0 0 #E0B59F, 4px -2px 0 #E0B59F, 4px -4px 0 #E0B59F, 4px -6px 0 #E0B59F, 4px -8px 0 #E0B59F, 4px -10px 0 #E0B59F, 4px -12px 0 #E0B59F, 0px 0px 0 #E0B59F;
+            transform: rotate(45deg);
+        }
+    }
+}

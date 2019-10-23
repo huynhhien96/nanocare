@@ -1,0 +1,41 @@
+.pagination {
+    max-width: 1060px;
+    margin: 79px auto 120px;
+    .page-number {
+        height: 25px;
+        margin: 0 auto;
+        list-style: none;
+        &-item {
+            width: 35px;
+            border-bottom: 2px solid $color-black;
+            align-items: flex-start;
+            height: 100%;
+            text-align: center;
+            margin-right: 20px;
+            cursor: pointer;
+            a {
+                font-weight: 600;
+                line-height: normal;
+                font-size: 12px;
+                text-align: center;
+                text-transform: uppercase;
+                color: $color-black;
+                height: 100%;
+                width: 100%;
+            }
+            &.more-page {
+                border-bottom: none;
+            }
+            &.last-page {
+                margin-right: 0;
+                width: 101px;
+            }
+            &.current, &:hover {
+                border-bottom: 2px solid #E0B59F;
+                a {
+                    color: #E0B59F;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,337 @@
+// NEW CSS
+.blog__cover {
+    img {
+        width: 100%;
+    }
+    &-content {
+        position: relative;
+        top: -70px;
+        max-width: 1060px;
+        margin: 0 auto;
+        background: #fff;
+        box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
+        padding: 30px 180px 14px;
+        &--title {
+            font-size: 30px;
+            line-height: 51px;
+            text-align: center;
+            padding-bottom: 25px;
+        }
+        &--detail {
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 27px;
+            margin-bottom: 49px;
+        }
+        .button--blog {
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+    }
+    &-list {
+        max-width: 700px;
+        margin: -35px auto 0;
+        p {
+            position: relative;
+            padding-left: 30px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid $color-gray;
+            margin-bottom: 23px;
+            &:before {
+                content: '';
+                width: 16px;
+                height: 16px;
+                background: url('../images/paper.png') no-repeat;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+            &:last-of-type {
+                margin-bottom: 61px;
+            }
+        }
+    }
+}
+@include breakpoint3 {
+    .blog__cover {
+        img {
+            width: 100%;
+        }
+        &-content {
+            position: relative;
+            top: 0;
+            padding: 20px;
+            box-shadow: unset;
+            &--title {
+                font-size: 24px;
+                line-height: 41px;
+                text-align: left;
+                padding-bottom: 11px;
+            }
+            &--detail {
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 27px;
+                margin-bottom: 49px;
+            }
+            .button--blog {
+                padding-bottom: 0;
+                border-bottom: none;
+            }
+        }
+        &-list {
+            max-width: 700px;
+            margin: 0 auto;
+            p {
+                position: relative;
+                padding: 20px 20px 20px 44px;
+                border-top: 1px solid $color-gray;
+                border-bottom: none;
+                margin-bottom: 23px;
+                &:before {
+                    content: '';
+                    width: 16px;
+                    height: 16px;
+                    background: url('../images/paper.png') no-repeat;
+                    position: absolute;
+                    top: 18px;
+                    left: 18px;
+                }
+                &:last-of-type {
+                    margin-bottom: 61px;
+                    border-bottom: 1px solid $color-gray;
+                }
+            }
+        }
+    }
+}
+
+.blog__content {
+    &--container {
+        margin: 0 auto;
+        p {
+            text-align: left;
+            max-width: 700px;
+            margin: 30px auto;
+            line-height: 38px;
+            font-size: 22px;
+        }
+        h2, h3, h4 {
+            font-weight: 200;
+            font-size: 36px;
+            line-height: 58px;
+            color: $color-black;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        img {
+            margin-bottom: 15px;
+        }
+        .title-blogs {
+            line-height: 58px;
+            font-size: 36px;
+        }
+        .src-img {
+            font-style: italic;
+            font-weight: 300;
+            line-height: normal;
+            font-size: 12px;
+        }
+    }
+    &--text {
+        text-align: left;
+		padding-bottom: 60px;
+        
+        &-left {
+            margin-top: 70px;
+            margin-right: 110px;
+            .c-title {
+                text-align: left;
+                font-size: 30px;
+                line-height: 51px;
+                font-weight: normal;
+                margin-bottom: 37px;
+            }
+            .button__blog {
+                margin-bottom: 84px;
+            }
+            &-detail p {
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 28px;
+            }
+        }
+    }
+    &--img-right {
+        overflow: hidden;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+@include breakpoint3 {
+    .blog__content {
+        &--container {
+            text-align: center;
+            padding: 0 20px 20px;
+            p {
+                text-align: left;
+                max-width: 700px;
+                margin: 0px auto;
+                line-height: 28px;
+                font-size: 12px;
+            }
+            h2, h3, h4 {
+                text-align: left;
+                font-weight: 200;
+                font-size: 30px;
+                line-height: 48px;
+            }
+            img {
+                margin-bottom: 15px;
+                width: 100%;
+            }
+            .title-blogs {
+                line-height: 58px;
+                font-size: 36px;
+            }
+            .src-img {
+                font-style: italic;
+                font-weight: 300;
+                line-height: normal;
+                font-size: 12px;
+            }
+        }
+        &--text {
+            text-align: left;
+            padding-bottom: 0px;
+            &-left {
+                margin-top: 0;
+                margin-right: 0;
+                .c-title {
+                    text-align: left;
+                    font-size: 24px;
+                    line-height: 41px;
+                    font-weight: normal;
+                    margin: 20px 0 11px;
+                }
+                .button__blog {
+                    margin-bottom: 28px;
+                }
+                &-detail {
+                    font-weight: normal;
+                    font-size: 12px;
+                    line-height: 28px;
+                }
+            }
+        }
+        &--img-right {
+            overflow: hidden;
+            padding: 20px 0 30px;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+
+.blog__single {
+    max-width: 1060px;
+    margin: 0 auto;
+    &--item {
+        width: 500px;
+        max-height: unset;
+        margin-bottom: 90px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        &:nth-last-child(2) {
+            margin-bottom: 0;
+        }
+        &-title {
+            line-height: 38px;
+            font-size: 24px;
+            color: #282829;
+            margin: 15px 0 13px;
+            text-overflow: ellipsis;
+            max-height: 77px;
+            overflow: hidden;
+        }
+        &-detail {
+            max-height: 74px;
+            min-height: 74px;
+            font-weight: 300;
+            line-height: 26px;
+            font-size: 14px;
+            color: #525254;
+            margin-bottom: 25px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+        .img-bg {
+            max-height: 375px;
+            overflow: hidden;
+            .img-fluid {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+@include breakpoint3 {
+    .blog__single {
+        max-width: 1060px;
+        margin: 0 auto;
+        &--item {
+            margin: 20px 0;
+            &-title {
+                line-height: 38px;
+                font-size: 18px;
+                color: #282829;
+                margin: 15px 0 13px;
+                text-overflow: unset;
+                max-height: unset;
+                overflow: hidden;
+            }
+            &-detail {
+                max-height: 74px;
+                min-height: 74px;
+                font-weight: 300;
+                line-height: 26px;
+                font-size: 14px;
+                color: #525254;
+                margin-bottom: 25px;
+                text-overflow: ellipsis;
+                overflow: hidden;
+            }
+            .img-bg {
+                max-height: 375px;
+                overflow: hidden;
+                .img-fluid {
+                    width: 100%;
+                    height: auto;
+                    transform: unset;
+                }
+            }
+        }
+    }
+}
+
+.user-comment {
+    width: 100%;
+    .customer-preview--item {
+        width: 100%;
+    }
+    .comment {
+        margin-top: 14px;
+    }
+}
+
+.line {
+    max-width: 880px;
+    height: 1px;
+    background: $color-gray;
+    margin: 35px auto;
+}

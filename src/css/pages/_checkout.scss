@@ -1,0 +1,57 @@
+.checkout__wrapper {
+    flex-wrap: nowrap;
+    .container {
+        padding: 0;
+    }
+    &-left {
+        max-width: 910px;
+        width: 100%;
+        position: relative;
+        padding: 40px 110px 0 190px;
+        .checkout-header {
+            height: 43px;
+            flex-wrap: nowrap;
+            h2 {
+                font-size: 26px;
+                margin-right: 40px;
+            }
+            a {
+                color: $color-pink;
+            }
+        }
+        .checkout-container {
+            .button__checkout {
+                margin-top: 31px;
+                height: 80px;
+                text-align: center;
+                background: #c6dcd0;
+                transition: all 0.1s;
+                &:after {
+                    content: '';
+                    width: 19px;
+                    height: 20px;
+                    top: 30px;
+                    right: 20px;
+                    background: url('../images/checkout.svg') no-repeat;
+                }
+                &:hover {
+                    transition: all 0.1s;
+                    background: #428963;
+                }
+            }
+        }
+        .logo-page__checkout {
+            position: absolute;
+            top: 26px;
+            left: 50px;
+        }
+    }
+    &-right {
+        .modal__cart {
+            position: unset;
+            .cart-item:first-child {
+                margin-top: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,90 @@
+.c-title {
+    text-align: center;
+    font-style: normal;
+    h2 {
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 62px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    p {
+        font-weight: 265;
+        font-size: 24px;
+        line-height: 38px;
+        text-align: center;
+    }
+}
+/***********/
+
+/* CSS COMPONENT */
+.text-uppercase {
+    text-transform: uppercase;
+}
+.img-fluid {
+    width: 100%;
+    height: auto;
+}
+.w-1440 {
+    max-width: 1440px;
+    margin: 0 auto;
+    @media (max-width: 1440px) {
+        max-width: 100%;
+    }
+}
+.w-1060 {
+    max-width: 1060px;
+    margin: 0 auto;
+    @media (max-width: 1060px) {
+        max-width: 100%;
+    }
+}
+.w-880 {
+    max-width: 880px;
+    margin: 0 auto;
+}
+.w-700 {
+    max-width: 700px;
+    margin: 0 auto;
+}
+.w-610 {
+    max-width: 610px;
+}
+.w-520 {
+    max-width: 520px;
+}
+.w-360 {
+    max-width: 360px;
+    width: 100%;
+}
+.w-340 {
+    max-width: 340px;
+    width: 100%;
+}
+.w-250 {
+    max-width: 250px;
+    width: 100%;
+}
+.w-100 {
+    width: 100%;
+}
+.border-bt-gray {
+    border-bottom: 1px solid #E5E5E5;
+}
+.border-tp-gray {
+    border-top: 1px solid #E5E5E5;
+}
+
+
+.m-top-20 {
+    margin-top: 20px;
+}
+.small-line {
+    width: 30px;
+    height: 3px;
+    background: #282829;
+    margin-bottom: 30px;
+}
+.text-center {
+    text-align: center;
+}
