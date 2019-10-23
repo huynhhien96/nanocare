@@ -1,0 +1,21 @@
+/*
+Theme Name: Nano Care
+Theme URI: http://nano-care.vn/
+Author: StayLab
+Author URI: http://staylab.co/
+Description:
+Version: 2.1
+Text Domain: nano-care
+Tags:
+*/
+
+/* IMAGES COVER */
+    .c-cover {
+        width: 100%;
+        position: relative;
+    }
+    .c-cover img {
+        width: 100%;
+    }
+
+/* PAGINATION */
