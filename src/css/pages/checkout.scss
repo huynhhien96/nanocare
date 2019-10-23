@@ -1,0 +1,37 @@
+.woocommerce-checkout {
+    .woocommerce-info {
+        border-top: 4px solid $color-green;
+    }
+    .woocommerce-info::before {
+        color: $color-green;
+    }
+    #ship-to-different-address {
+        margin-bottom: 0;
+    }
+    form .form-row {
+        input.input-text {
+            height: 40px;
+            padding-left: 12px;
+        }
+        textarea {
+            height: 60px;
+            padding-left: 12px;
+        }
+    }
+    .select2-container .select2-selection--single {
+        height: 40px;
+    }
+    .select2-container--default .select2-selection--single .select2-selection__rendered {
+        line-height: 40px;
+    }
+    .woocommerce-invalid-required-field {
+        input[type=text] {
+            border: 1px solid red;
+        }
+    }
+    .woocommerce-validated, .validate-required {
+        input[type=text], input[type=tel], input[type=email] {
+            border: 1px solid $color-green;
+        }
+    }
+}

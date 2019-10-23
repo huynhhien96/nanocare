@@ -1,7 +1,8 @@
-import validate from 'jquery.validation'
+
 import Swal from 'sweetalert2'
 
 export default () => {
+  console.log('login here')
   $('#frm-login').validate({
     rules: {
       email: {
@@ -24,13 +25,13 @@ export default () => {
         dataType: 'json',
         data: $(form).serialize(),
         beforeSend: function () {
-          $('input, button', $(form)).attr('disabled','disabled')
+          $('input, button', $(form)).attr('disabled', 'disabled')
         },
         success: function (data) {
-          if( data.status === 1 ){
-            window.location = '/'
+          if (data.status === 1) {
+            window.location.hostname
           }
-          else{
+          else {
             $('input, button', $(form)).attr('disabled', false)
             Swal.fire({
               title: 'Error!',
@@ -41,10 +42,9 @@ export default () => {
           }
         }
       })
-      return false;
+      console.log('return false');
     }
   })
-
   $('#frm-register').validate({
     rules: {
       // fullname: 'required',
@@ -229,7 +229,6 @@ export default () => {
         }
       }, {scope: 'public_profile,email'})
     })
-
     $('.button-google').click(function () {
       const self = $(this)
       if(window.gapi){
@@ -269,6 +268,9 @@ export default () => {
         })
       }
     })
-
+    $('.change-tab').click(function() {
+      $('.login_container').toggle()
+      $('.register_container').toggleClass('active')
+    })
   })
 }

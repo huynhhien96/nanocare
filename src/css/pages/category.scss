@@ -1,0 +1,163 @@
+.category {
+    margin-top: 60px;
+    &-wrap {
+        .col-md-10 {
+            margin: 0 auto;
+            flex-wrap: nowrap;
+        }
+        .col-left {
+            margin-right: 16px;
+            padding: 0;
+        }
+        .col-right {
+            flex: 1;
+        }
+    }
+    &--filter {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        .filter-item {
+            position: relative;
+            width: 244px;
+            margin-left: auto;
+            padding-left: 15px;
+            cursor: pointer;
+            margin-bottom: 30px;
+            a {
+                transition: all 0.2s;
+                font-size: 14px;
+                line-height: 30px;
+                color: $color-gray2;
+                user-select: none;
+            }
+            &.active {
+                background: #F8F8F6;
+                a {
+                    color: $color-black;
+                }
+                &:after {
+                    content: '';
+                    width: 10px;
+                    height: 10px;
+                    position: absolute;
+                    top: 10px;
+                    right: 14px;
+                    // background: url('../assets/close.png') no-repeat;
+                }
+            }
+            &:hover p {
+                color: $color-black;
+                transition: all 0.2s;
+            }
+        }
+    }
+    &-filter-select {
+        display: none;
+    }
+}
+@include breakpoint3 {
+    .category {
+        margin-top: 0px;
+        &-wrap {
+            .col-md-10 {
+                margin: 0 auto;
+                padding: 0;
+                flex-wrap: wrap;
+            }
+            .col-left {
+                margin-right: 0;
+                padding: 0;
+            }
+            .col-right {
+                flex: 1;
+                padding: 0;
+            }
+        }
+        &--filter {
+            display: none;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            padding: 32px 30px 68px;
+            background: #fff;
+            position: absolute;
+            width: 100%;
+            top: 56px;
+            z-index: 10;
+            transition: all 0.2s;
+            .filter-item {
+                position: relative;
+                width: 45%;
+                margin-left: 0;
+                padding-left: 0;
+                cursor: pointer;
+                margin-bottom: 20px;
+                text-align: left;
+                a {
+                    transition: all 0.2s;
+                    font-size: 14px;
+                    line-height: 30px;
+                    color: $color-gray2;
+                    user-select: none;
+                }
+                &.active {
+                    background: #F8F8F6;
+                    a {
+                        color: $color-black;
+                    }
+                    &:after {
+                        content: '';
+                        width: 10px;
+                        height: 10px;
+                        position: absolute;
+                        top: 10px;
+                        right: 14px;
+                        // background: url('../assets/close.png') no-repeat;
+                    }
+                }
+                &:hover p {
+                    color: $color-black;
+                    transition: all 0.2s;
+                }
+            }
+            &.active {
+                display: block;
+                transition: all 0.2s;
+            }
+        }
+        &-filter-select {
+            display: flex;
+            text-align: right;
+            text-transform: uppercase;
+            h3 {
+                margin-bottom: 0;
+                span {
+                    position: relative;
+                    z-index: 2;
+                }
+                &.active {
+                    position: relative;
+                    &::after {
+                        content: "";
+                        width: 100%;
+                        height: 10px;
+                        background: #E5E5E5;
+                        position: absolute;
+                        bottom: 12px;
+                        left: 0;
+                    }
+                }
+            }
+            p {
+                margin-bottom: 12px;
+                padding-left: 27px;
+                background: url('/wp-content/themes/happyzoo/assets/filter.svg') no-repeat;
+                background-position: left top -1px;
+            }
+            .close-text {
+                display: none;
+            }
+        }
+    }
+}

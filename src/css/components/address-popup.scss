@@ -1,0 +1,78 @@
+.address-popup {
+    display: none;
+    position: absolute;
+    z-index: 99;
+    width: 1024px;
+    height: 600px;
+    background: #fff;
+    box-shadow: 0px 0px 18px rgba(40, 40, 41, 0.25);
+    border: 1px solid #E5E5E5;
+    box-sizing: border-box;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 150px;
+    .address-popup-container {
+        position: relative;
+        .close-img {
+            position: absolute;
+            top: 0;
+            right: 0;
+            cursor: pointer;
+        }
+    }
+    .address-popup-wrapper {
+        padding: 50px;
+        .row-1 {
+            .phone-number {
+                height: 80px;
+                padding-right: 75px;
+                border-right: 1px solid #E5E5E5;
+                .zoo-ico-phone {
+                    width: 21px;
+                    height: 21px;
+                    background-size: cover;
+                    margin: 0 18px 5px 0;
+                }
+                .hotline {
+                    margin: 0;
+                    font-weight: normal;
+                }
+            }
+            .time-open {
+                width: 372px;
+                height: 58px;
+                margin: 0;
+                font-size: 18px;
+                line-height: 29px;
+            }
+            .icon-black {
+                display: block;
+            }
+            .icon-white {
+                display: none;
+            }
+            .facebook-insta {
+                height: 80px;
+                padding-left: 98px;
+                border-left: 1px solid #E5E5E5;
+                a:last-child {
+                    margin-left: 40px;
+                }
+            }
+        }
+    }
+    &.is-active {
+        display: block;
+        animation-name: slideDown;
+        animation-duration: 0.8s;
+    }
+    @-webkit-keyframes slideDown {
+        from {top: 0;}
+        to {top: 150px;}
+    }
+    @keyframes slideDown {
+        from {top: 0;}
+        to {top: 150px;}
+    }
+}

@@ -1,0 +1,13 @@
+.information {
+    h3 {
+        margin-top: 64px;
+    }
+    &-content {
+        ul {
+            list-style-image: url('/wp-content/themes/happyzoo/assets/circle_green.png');
+            li {
+                margin-top: 10px;
+            }
+        }
+    }
+}

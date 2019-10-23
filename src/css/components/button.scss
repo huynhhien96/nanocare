@@ -1,0 +1,190 @@
+.load-more {
+    border-top: 1px solid $color-gray;
+    border-bottom: 1px solid $color-gray;
+    text-align: center;
+    padding: 27px 0;
+    span {
+        position: relative;
+        font-size: 14px;
+        line-height: normal;
+        letter-spacing: 0.15em;
+        font-weight: bold;
+        cursor: pointer;
+        &:after {
+            content: '';
+            position: absolute;
+            top: 7px;
+            right: -20px;
+            width: 0;
+            height: 0;
+            border-left: 3px solid transparent;
+            border-right: 3px solid transparent;
+            border-top: 4px solid $color-black;
+        }
+    }
+}
+.btn-black {
+    background: $color-black !important;
+    color: #fff !important;
+}
+.button__quanity {
+    .quanity {
+        height: 55px;
+        width: 55px;
+        font-size: 30px;
+        background: $color-gray3;
+        border: none;
+    }
+    .quanity__text {
+        width: 135px;
+        border: none;
+        border-top: 1px solid $color-gray3;
+        border-bottom: 1px solid $color-gray3;
+        padding: 0 20px;
+        box-sizing: border-box;
+        text-align: center;
+        &:focus {
+            border: 1px solid #CDD8A7;
+            box-shadow: none;
+            outline-color: transparent;
+        }
+    }
+}
+@include breakpoint3 {
+    .button__quanity {
+        .quanity {
+            height: 40px;
+            width: 40px;
+            font-size: 20px;
+            background: $color-gray3;
+            border: none;
+        }
+        .quanity__text {
+            width: 135px;
+            border: none;
+            border-top: 1px solid $color-gray3;
+            border-bottom: 1px solid $color-gray3;
+            padding: 0 20px;
+            box-sizing: border-box;
+            text-align: center;
+            &:focus {
+                border: 1px solid #CDD8A7;
+                box-shadow: none;
+                outline-color: transparent;
+            }
+        }
+    }
+}
+.button__comment {
+    width: 360px;
+    height: 55px;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.15em;
+}
+@include breakpoint3 {
+    .button__comment {
+        width: 90%;
+        height: 55px;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        letter-spacing: 0.15em;
+    }
+}
+.list-button-pagination {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    .c-button-item {
+        cursor: pointer;
+        user-select: none;
+        outline-color: unset;
+        width: 60px;
+        height: 32px;
+        &:focus {
+            outline-color: #fff;
+        }
+    }
+    .c-button-prev-left {
+        position: relative;
+        &:after {
+            content: '';
+            position: absolute;
+            width: 60px;
+            height: 32px;
+            background: url(/wp-content/themes/happyzoo/assets/arrow-left.png) no-repeat;
+        }
+    }
+    .c-button-next-right {
+        position: relative;
+        &:after {
+            content: '';
+            position: absolute;
+            width: 60px;
+            height: 32px;
+            background: url(/wp-content/themes/happyzoo/assets/arrow-right.png) no-repeat;
+        }
+    }
+    .swiper-button-disabled {
+        img {
+            opacity: 0.4;
+        }
+        &:after {
+            opacity: 0.4;
+        }
+    }
+}
+@include breakpoint3 {
+    .list-button-pagination {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        display: none;
+        .c-button-item {
+            cursor: pointer;
+            user-select: none;
+            outline-color: unset;
+            width: 25px;
+            height: 25px;
+            &:focus {
+                outline-color: #fff;
+            }
+        }
+        .c-button-prev-left {
+            position: relative;
+            &:after {
+                content: '';
+                position: absolute;
+                width: 60px;
+                height: 32px;
+                background: url(/wp-content/themes/happyzoo/assets/arrow-left.png) no-repeat;
+            }
+        }
+        .c-button-next-right {
+            position: relative;
+            &:after {
+                content: '';
+                position: absolute;
+                width: 60px;
+                height: 32px;
+                background: url(/wp-content/themes/happyzoo/assets/arrow-right.png) no-repeat;
+            }
+        }
+        .swiper-button-disabled {
+            img {
+                opacity: 0.4;
+            }
+            &:after {
+                opacity: 0.4;
+            }
+        }
+    }
+}
+#place_order {
+    background: $color-green;
+    width: 320px;
+    height: 60px;
+    font-size: 25px;
+}

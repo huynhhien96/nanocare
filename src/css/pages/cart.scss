@@ -1,0 +1,235 @@
+.woocommerce-cart {
+    .header {
+        height: 160px;
+        .container {
+            display: none;
+        }
+        .container-cart-header {
+            display: block;
+            text-align: center;
+        }
+    }
+}
+@include breakpoint3 {
+    .woocommerce-cart {
+        .header {
+            position: relative;
+            .container {
+                display: none;
+            }
+            .container-cart-header {
+                display: block;
+                text-align: center;
+            }
+        }
+    }
+}
+.woocommerce-checkout {
+    @extend .woocommerce-cart;
+}
+
+
+.view-cart-container {
+    padding: 0;
+    margin: 0 auto;
+    .woocommerce-cart-form {
+        .shop_table {
+            .product-remove {
+                width: 10px;
+            }
+            .product-name {
+                width: 30%;
+                .thumbnail-image-mobile, .product-price-mobile {
+                    display: none;
+                }
+            }
+            .product-price {
+                width: 20%;
+            }
+            .product-quantity {
+                width: 20%;
+            }
+            .product-subtotal {
+                width: 20%;
+            }
+            td {
+                height: 80px;
+                &.product-thumbnail {
+                    padding: 0;
+                }
+            }
+        }
+        button[name=update_cart] {
+            display: none !important;
+        }
+        .product-remove-mobile {
+            display: none;
+        }
+        a.remove {
+            font-size: 20px;
+            height: 20px;
+            width: 20px;
+            font-weight: normal;
+        }
+        .coupon {
+            .input-text {
+                width: 130px !important;
+            }
+        }
+    }
+    .cart-collaterals {
+        .cart_totals  {
+            width: 100%;
+            .checkout-button {
+                background: #CDD8A7;
+                &:hover {
+                    background: rgba(205, 216, 167, 0.8);
+                }
+            }
+        }
+    }
+}
+@include breakpoint3 {
+    .view-cart-container {
+        padding: 0;
+        margin: 0 auto;
+        .woocommerce-cart-form {
+            .shop_table {
+                tbody {
+                    display: block;
+                    width: 100%;
+                }
+                .product-remove {
+                    width: 100%;
+                    display: none;
+                }
+                .product-name {
+                    width: 100%;
+                    height: auto;
+                    padding: 10px 12px;
+                    display: flex;
+                    &-mobile {
+                        text-align: left;
+                        flex: 1;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        margin-left: 15px;
+                        position: relative;
+                    }
+                    .thumbnail-image-mobile {
+                        display: block;
+                        img {
+                            width: 72px;
+                        }
+                    }
+                    &::before {
+                        content: unset;
+                    }
+                    .product-price-mobile {
+                        display: flex;
+                        justify-content: space-between;
+                        .title-variation {
+                            font-weight: bold;
+                        }
+                    }
+                    .variation {
+                        margin: 5px 0;
+                        display: flex;
+                        justify-content: space-between;
+                        dd {
+                            width: 62px;
+                            text-align: center;
+                        }
+                    }
+                }
+                .product-price {
+                    width: 100%;
+                    display: none;
+                    height: auto;
+                }
+                .product-quantity {
+                    width: 100%;
+                    height: auto;
+                    display: inline-block;
+                    .quantity .qty {
+                        width: 60px;
+                    }
+                }
+                .product-subtotal {
+                    width: 100%;
+                }
+                td {
+                    height: 80px;
+                    &.product-thumbnail {
+                        padding: 0;
+                    }
+                }
+            }
+            button[name=update_cart] {
+                display: block !important;
+            }
+            .product-remove-mobile {
+                display: block;
+            }
+            a.remove {
+                font-size: 12px;
+                color: $color-black !important;
+                text-align: right;
+                width: auto;
+                height: auto;
+                font-weight: normal;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                &:hover, &:active {
+                    background: unset;
+                    color: red !important;
+                }
+            }
+            td.update-coupon {
+                height: auto;
+                .coupon {
+                    .input-text {
+                        width: 130px !important;
+                    }
+                }
+            }
+        }
+        .cart-collaterals {
+            .cart_totals  {
+                width: 100%;
+                .checkout-button {
+                    background: #CDD8A7;
+                    &:hover {
+                        background: rgba(205, 216, 167, 0.8);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.woocommerce {
+    .cart-empty {
+        text-align: center;
+        font-family: iCielBC Le Jeune Poster, serif;
+        font-size: 30px;
+        margin: 20px 0 40px;
+    }
+    .return-to-shop {
+        text-align: center;
+        a {
+            display: flex;
+            background: $color-green;
+            width: 250px;
+            height: 55px;
+            font-size: 18px;
+            color: #fff;
+            transition: all 0.2s;
+        }
+    }
+}
+input[name='update_cart'] {
+    display: none !important;
+}

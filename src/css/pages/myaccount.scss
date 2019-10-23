@@ -1,0 +1,101 @@
+.dashboard-zoo {
+    .woocommerce {
+        max-width: 1366px;
+        // border: 1px solid #000;
+        margin: 60px auto 0;
+        display: flex;
+        min-height: 500px;
+        .myaccount-navigation {
+            float: unset;
+            width: 22%;
+            .list-account-items {
+                padding: 0 0;
+                margin: 0;
+                .account-menu-item {
+                    padding: 20px 30px;
+                    font-size: 16px;
+                    position: relative;
+                    &:last-child {
+                        border-bottom: unset;
+                    }
+                    &.is-active {
+                        background: #CDD8A7;
+                        a {
+                            color: #fff;
+                            text-transform: uppercase;
+                        }
+                    }
+                }
+            }
+        }
+        .woocommerce-MyAccount-content {
+            background-color: #f6f6f6;
+            float: unset;
+            width: auto;
+            flex: 1;
+            padding: 20px 30px;
+            .dashboard-detail {
+                font-size: 18px;
+                line-height: 28px;
+                a {
+                    border-bottom: 1px solid #CDD8A7;
+                    color: #CDD8A7;
+                    &:hover {
+                        color: #adba84;
+                        border-bottom: 1px solid #adba84;
+                    }
+                }
+            }
+            .woocommerce-Addresses-wrapper {
+                .woocommerce-Address {
+                    background: #fff;
+                    width: auto;
+                    flex: 1;
+                    border-radius: 7px;
+                    padding: 20px 30px;
+                    position: relative;
+                    &.u-column-1 {
+                        margin-right: 20px;
+                    }
+                    .woocommerce-Address-title {
+                        .edit {
+                            position: absolute;
+                            top: 12px;
+                            right: 14px;
+                            text-transform: uppercase;
+                        }
+                    }
+                }
+            }
+        }
+        .select2-container--default .select2-selection--single {
+            border: unset;
+            padding: 9px 20px;
+            height: auto;
+        }
+        .select2-container--default .select2-selection--single .select2-selection__arrow {
+            height: 100%;
+            right: 8px;
+        }
+        .save-form {
+            background-color: #CDD8A7;
+            border: none;
+            color: #fff;
+            border-radius: 6px;
+            width: 160px;
+            height: 40px;
+            font-size: 18px;
+            transition: all 0.2s;
+            font-weight: normal;
+            &:hover {
+                transition: all 0.2s;
+                background-color: #adba84;
+                color: #fff;
+                transition: all 0.2s;
+            }
+            &:focus {
+                outline: unset;
+            }
+        }
+    }
+}

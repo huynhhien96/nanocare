@@ -1,0 +1,160 @@
+.listing-cate{
+  &__title{
+    display: block;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    padding: 30px 0;
+    position: relative;
+  }
+}
+
+.listing-product {
+  .product-item {
+    margin-bottom: 40px;
+    width: 45%;
+    padding: 0;
+    &:nth-of-type(3n + 2) {
+      margin-left: 16px;
+    }
+    &:nth-of-type(3n) {
+      margin: 0 10px 40px;
+    }
+    &--img {
+      margin-bottom: 20px;
+      img {
+        min-width: 100%;
+      }
+    }
+    &--detail {
+      height: 94px;
+      font-size: 14px;
+      &-type {
+        margin-bottom: 13px;
+        font-weight: bold;
+        letter-spacing: 1px;
+      }
+      &-price {
+        margin-bottom: 0;
+      }
+    }
+    &--title {
+      .product-title {
+        font-weight: bold;
+      }
+    }
+    .type {
+      &:last-of-type:first-of-type {
+        margin: 0;
+      }
+      &:last-of-type {
+        margin: 0 15px;
+      }
+      &.type-new {
+        background: $color-primary;
+        padding: 0 14px;
+        a {
+          color: $color-black;
+        }
+      }
+      &.type-sale {
+        background: $color-red;
+        padding: 0 14px;
+        a {
+          color: $color-white;
+        }
+      }
+      a:hover {
+        color: $color-white;
+      }
+    }
+  }
+}
+
+@include breakpoint3 {
+  .listing-cate{
+    &__title{
+      display: block;
+      text-transform: uppercase;
+      text-align: center;
+      font-weight: bold;
+      padding: 30px 0;
+      position: relative;
+    }
+  }
+
+  .listing-product {
+    padding: 0;
+    margin-top: 18px;
+    .product-item {
+      margin-bottom: 56px;
+      width: 100%;
+      padding: 0 5px;
+      flex-shrink: 0;
+      &:nth-of-type(3n + 2) {
+        margin-left: 0;
+      }
+      &:nth-of-type(3n) {
+        margin: 0 10px 40px;
+      }
+      &--img {
+        margin-bottom: 17px;
+        img {
+          min-width: 100%;
+        }
+      }
+      &--detail {
+        height: 94px;
+        font-size: 14px;
+        &-type {
+          margin-bottom: 12px;
+          font-weight: bold;
+          letter-spacing: 1px;
+          display: flex;
+          padding: 0;
+          justify-content: center;
+        }
+        &-price {
+          margin-bottom: 0;
+        }
+      }
+      &--title {
+        min-height: 0px;
+        .product-title {
+          font-size: 14px;
+          font-weight: bold;
+          margin-bottom: 16px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+      .type {
+        font-size: 14px;
+        &:last-of-type:first-of-type {
+          margin: 0;
+        }
+        &:last-of-type {
+          margin: 0 0 0 8px;
+        }
+        &.type-new {
+          background: $color-primary;
+          padding: 0 8px;
+          a {
+            color: $color-black;
+          }
+        }
+        &.type-sale {
+          background: $color-red;
+          padding: 0 10px;
+          a {
+            color: $color-white;
+          }
+        }
+        a:hover {
+          color: $color-white;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+@mixin breakpoint1 {
+	@media screen and (max-width : #{$breakpoint1}) {
+		@content;
+	}
+}
+
+@mixin breakpoint2 {
+	@media screen and (max-width : #{$breakpoint2}) {
+		@content;
+	}
+}
+
+@mixin breakpoint3 {
+	@media screen and (max-width : #{$breakpoint3}) {
+		@content;
+	}
+}

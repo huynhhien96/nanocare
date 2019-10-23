@@ -1,0 +1,154 @@
+.lookbook {
+    &--content {
+        position: relative;
+        padding-bottom: 150px;
+        //.col-md-10 {
+        //    margin-left: auto;
+        //}
+        &-product {
+            position: absolute;
+            bottom: 39px;
+            left: 90px;
+            background: #fff;
+            padding: 0 40px 0 78px;
+            overflow: hidden;
+            .sub-title {
+                margin: 60px 0 45px;
+            }
+            .main-title {
+                margin-bottom: 51px;
+            }
+            .text-detail {
+                margin-bottom: 61px;
+                font-size: 14px;
+                line-height: 30px;
+            }
+        }
+    }
+    &--filter {
+        position: relative;
+        &-list {
+            position: absolute;
+            list-style: none;
+            margin-top: 60px;
+            left: 102px;
+            z-index: 2;
+            li {
+                margin-bottom: 30px;
+                &.active a {
+                    color: $color-black;
+                }
+            }
+            a {
+                font-size: 14px;
+                line-height: 30px;
+                text-transform: capitalize;
+                color: #AFAFAF;
+                white-space: nowrap;
+            }
+        }
+    }
+    &--product {
+        position: relative;
+        margin-bottom: 99px;
+        &-detail {
+            width: 430px;
+            position: absolute;
+            bottom: 0;
+            background: #fff;
+        }
+        .text-uppercase {
+            font-size: 12px;
+            line-height: 15px;
+            letter-spacing: 0.1em;
+            margin: 55px 0;
+        }
+        .row {
+            margin: 0 0 75px 0;
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+            .col-img {
+                padding: 0;
+                width: 120px;
+                height: auto;
+            }
+            .col-md-8 {
+                padding: 0 16px;
+            }
+            .detail-title {
+                font-weight: 600;
+            }
+            .detail-price {
+                font-size: 14px;
+                line-height: 21px;
+                margin-bottom: 20px;
+            }
+        }
+        .detail-attributes {
+            padding: 20px 0;
+            border-top: 1px solid #E5E5E5;
+            border-bottom: 1px solid #E5E5E5;
+            p {
+                margin: 0 19px 0 0;
+            }
+            a {
+                cursor: pointer;
+                width: 40px;
+                height: 40px;
+                margin: 0;
+                font-weight: 600;
+            }
+            label {
+                background: #EFEFEF;
+                margin: 0;
+            }
+            .type {
+                width: 170px;
+            }
+            .type-radio {
+                display: none;
+            }
+        }
+    }
+    &__other {
+        position: relative;
+        .col-md-10 {
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        h2 {
+            margin-bottom: 50px;
+        }
+        &-list {
+            overflow: hidden;
+            .swiper-slide {
+                text-align: center;
+                font-size: 14px;
+                line-height: 17px;
+                text-align: center;
+                letter-spacing: 0.15em;
+                .detail-title {
+                    font-weight: 600;
+                    margin: 30px 0 14px;
+                }
+                .detail-date {
+                    font-size: 12px;
+                    line-height: 15px;
+                    letter-spacing: 0.1em;
+                }
+                .lookbook__other-img {
+                    overflow: hidden;
+                    position: relative;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 509px;
+                    img {
+                        width: auto;
+                    }
+                }
+            }
+        }
+    }
+}
