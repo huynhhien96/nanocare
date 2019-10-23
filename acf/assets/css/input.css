@@ -1,0 +1,51 @@
+.list-lookbook .row{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -10px;
+    margin-left: -10px;
+}
+.list-lookbook .col {
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-width: 100%;
+}
+.list-lookbook .col-2 {
+    -ms-flex: 0 0 16.666667%;
+    flex: 0 0 16.666667%;
+    max-width: 16.666667%;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.list-lookbook .col-9 {
+    -ms-flex: 0 0 75%;
+    flex: 0 0 75%;
+    max-width: 75%;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.list-lookbook .photo{}
+.list-lookbook .tag-products{
+    background: #fff;
+}
+.list-lookbook .filters {
+    border: #DFDFDF solid 1px;
+    background: #fff;
+}
+.list-lookbook .filters.-f3 .filter.-search {
+    width: 50%;
+}
+.list-lookbook .filters .filter{float: left}
+.list-lookbook .filters .filter:first-child span {
+    padding-left: 7px;
+}
+.list-lookbook .filters .filter span {
+    display: block;
+    padding: 7px 7px 7px 0;
+}
+.list-lookbook .acf-relationship .list{
+    height: 145px;
+}
