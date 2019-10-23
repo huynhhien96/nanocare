@@ -1,0 +1,114 @@
+.zoo {
+  &-mainnav{
+    list-style: none;
+    margin: 0;
+    display: inline-block;
+    li{
+      display: inline-block;
+      text-transform: uppercase;
+      padding: 0 20px;
+    }
+    a{
+      display: block;
+      line-height: 20px;
+    }
+    .current-menu-item, .current-product-ancestor {
+      position: relative;
+      z-index: 2;
+      &:after {
+        content: "";
+        z-index: -1;
+        position: absolute;
+        left: 0;
+        top: 10px;
+        width: 100%;
+        min-width: 49px;
+        height: 10px;
+        background: #E5E5E5;
+      }
+    }
+  }
+  &-footernav{
+    list-style: none;
+    margin: 20px 0 0 0;
+    padding: 0 8px;
+    display: inline-block;
+    li{
+      display: inline-block;
+      margin: 0 8px;
+    }
+    a{
+      display: block;
+      line-height: 20px;
+      color: $color-white;
+    }
+  }
+}
+.header {
+  .login-item {
+    display: inline-block;
+    padding-left: 40px;
+    border-left: 1px solid $color-gray;
+    text-transform: uppercase;
+  }
+}
+
+.navigation {
+  padding: 0;
+  margin: 40px 0 0;
+  .user-account {
+    line-height: 20px;
+    border-left: 1px solid #E5E5E5;
+    margin-left: 20px;
+    padding-left: 40px;
+    height: 20px;
+    position: relative;
+    cursor: pointer;
+    .login-success {
+      margin: 0;
+    }
+  }
+  .sub-menu {
+    display: none;
+  }
+}
+@include breakpoint3 {
+  .zoo {
+    &-mainnav{
+      list-style: none;
+      margin: 0;
+      display: inline-block;
+      li{
+        display: inline-block;
+        text-transform: uppercase;
+        padding: 0 20px;
+      }
+      a{
+        display: block;
+        line-height: 20px;
+      }
+      .current-menu-item, .current-product-ancestor {
+        position: relative;
+        z-index: 2;
+        &:after {
+          content: unset;
+        }
+      }
+    }
+    &-footernav{
+      list-style: none;
+      margin: 20px 0 0 0;
+      padding: 0 8px;
+      display: inline-block;
+      li{
+        display: inline-block;
+        margin: 0 8px;
+      }
+      a{
+        display: block;
+        line-height: 20px;
+        color: $color-white;
+      }
+    }
+  }
+}

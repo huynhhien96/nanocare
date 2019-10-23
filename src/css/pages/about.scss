@@ -1,0 +1,81 @@
+.about__title-text {
+    font-family: 'iCielBC Le Jeune Poster';
+    font-size: 34px;
+    line-height: 57px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 0;
+}
+.about__title {
+    margin: 75px auto 72px;
+    &_1 {
+        margin-left: 8.3%;
+    }
+    &_2 {
+        margin-left: 170px;
+    }
+}
+.about__slide_img_container {
+    overflow: hidden;
+    .swiper-wrapper {
+        .swiper-slide {
+            height: 640px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: fit-content !important;
+            box-sizing: border-box;
+            img {
+                width: auto;
+                height: 100%;
+            }
+        }
+    }
+}
+.about__special {
+    margin: 123px auto;
+    .about__title_1 {
+        margin-bottom: 72px;
+    }
+    .about__title-text {
+        margin-left: 8.3%;
+    }
+}
+.about__special_2 {
+    margin: 0 auto 50px;
+    font-family: 'iCielBC Le Jeune Poster';
+    .about__title-text-2 {
+        margin-top: 169px;
+        .text-1 {
+            font-size: 30px;
+            line-height: 54px;
+            letter-spacing: 0.1em;
+            margin-bottom: 74px;
+        }
+        .text-2 {
+            font-size: 20px;
+            line-height: 36px;
+            letter-spacing: 0.1em;
+            margin-bottom: 48px;
+            span {
+                width: 100%;
+            }
+            a {
+                display: block;
+                font-size: 32px;
+                margin: 15px 0 60px;
+            }
+        }
+        .social_link {
+            a {
+                font-size: 30px;
+                line-height: 54px;
+                letter-spacing: 0.1em;
+            }
+            .img-content {
+                width: 24px;
+                margin-right: 20px;
+            }
+        }
+    }
+}

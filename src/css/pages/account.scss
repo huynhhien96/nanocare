@@ -1,0 +1,198 @@
+.popup-login {
+    position: absolute;
+    z-index: 99;
+    margin-left: auto;
+    margin-right: auto;
+    top: 10%;
+    left: 0;
+    right: 0;
+    width: fit-content;
+    padding: 35px 30px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.16);
+}
+.woocommerce {
+    .login_container {
+        width: 830px;
+        height: 500px;
+        text-align: left;
+        margin: 0px auto 60px;
+        border-radius: 7px;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.16);
+        display: flex;
+        overflow: hidden;
+        background: #fff;
+        transition: all 0.2s;
+        .login_wrapper {
+            width: 50%;
+            position: relative;
+            height: 100%;
+            padding: 30px 35px;
+            h2 {
+                font-size: 36px;
+                margin-bottom: 24px;
+            }
+        }
+        .img_cover {
+            flex: 1;
+            overflow: hidden;
+            img {
+                width: 100%;
+            }
+        }
+        .login_form {
+            width: 100%;
+            border: none;
+            padding: 0;
+            margin: 0;
+            border-radius: unset;
+            input.w-360 {
+                width: 100%;
+                padding: 9px 20px;
+                text-align: left;
+                border: 0;
+                outline: 0;
+                border-radius: 6px;
+                font-size: 15px;
+                font-weight: 300;
+                -webkit-transition: all 0.3s ease 0s;
+                transition: all 0.3s ease 0s;
+                margin-bottom: 16px;
+                background-color: #F7F7F7;
+                color: #000000;
+                &:hover, &:focus {
+                    background-color: #eaeaea;
+                }
+            }
+        }
+    }
+    .form-button {
+        margin-top: 8px;
+        .button {
+            background-color: #CDD8A7;
+            border: none;
+            color: #fff;
+            border-radius: 6px;
+            width: 50%;
+            height: 45px;
+            font-size: 14px;
+            transition: all 0.2s;
+            &:hover {
+                transition: all 0.2s;
+                background-color: #adba84;
+                color: #fff;
+                transition: all 0.2s;
+            }
+            &:focus {
+                outline: unset;
+            }
+        }
+        p.lost_password {
+            margin: 0;
+        }
+    }
+    .register_container {
+        @extend .login_container;
+        display: none;
+        &.active {
+            display: flex;
+        }
+    }
+    .register_wrapper {
+        @extend .login_wrapper;
+    }
+    .register_form {
+        @extend .login_form;
+    }
+}
+
+.change-tab {
+    position: absolute;
+    align-items: center;
+    bottom: 30px;
+    color: #b9c593;
+    margin: 0;
+    font-size: 16px;
+    cursor: pointer;
+    border-bottom: 1px solid;
+}
+.account-zoo {
+    .footer-img__top {
+        margin-top: 0;
+    }
+    .logo-home {
+        margin: 0 auto;
+    }
+    .header-bottom, .address-number, .bag-cart {
+        display: none;
+    }
+    .header {
+        height: 150px;
+    }
+    footer {
+        display: none;
+    }
+}
+.lost_reset_password {
+    width: 580px;
+    padding: 20px 35px;
+    margin: 60px auto 0;
+    border-radius: 7px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.16);
+    h4 {
+        font-size: 30px;
+    }
+    .form-row-first {
+        width: 100% !important;
+    }
+    label.title-user_login {
+        font-size: 20px;
+    }
+    input {
+        width: 100%;
+        padding: 9px 20px;
+        text-align: left;
+        border: 0;
+        outline: 0;
+        border-radius: 6px;
+        font-size: 15px;
+        font-weight: 300;
+        -webkit-transition: all 0.3s ease 0s;
+        transition: all 0.3s ease 0s;
+        margin-bottom: 16px;
+        background-color: #F7F7F7;
+        color: #000000;
+    }
+    .button-reset-pass {
+        background: #CDD8A7;
+        border: none;
+        color: #fff;
+        border-radius: 6px;
+        width: 50%;
+        height: 45px;
+        font-size: 14px;
+        transition: all 0.2s;
+        &:hover {
+            opacity: 0.8;
+            transition: all 0.2s;
+        }
+    }
+}
+.my-account-zoo {
+    .form-success-sent-mail-reset {
+        width: 600px;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.16);
+        overflow: hidden;
+        margin: 60px auto 0;
+        font-size: 18px;
+        line-height: 23px;
+        .woocommerce-message {
+            margin: 0;
+        }
+        .success-sent-mail-reset {
+            padding: 20px 20px;
+            margin: 0;
+        }
+    }
+}

@@ -1,0 +1,16 @@
+.zoo-ico{
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  bottom: -2px;
+  &-phone{
+    background-image: url('/wp-content/themes/happyzoo/assets/phone.svg');
+  }
+  &-place{
+    background: url('/wp-content/themes/happyzoo/assets/place.svg') no-repeat;
+  }
+  &-bag{
+    background: url('/wp-content/themes/happyzoo/assets/bag1.png') no-repeat;
+  }
+}

@@ -1,27 +1,43 @@
-@import "base/variables";
-@import "base/reset";
-@import "base/utilities";
-@import "base/function";
+//custom Bootstrap
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
 
-@import "components/woocommerce";
-@import "components/header";
-@import "components/navigation";
-@import "components/body";
-@import "components/footer";
-@import "components/button";
-@import "components/pagination";
-@import "components/swiper";
-@import "components/form";
+// Optional
+@import "~bootstrap/scss/reboot";
+@import "~bootstrap/scss/type";
+@import "~bootstrap/scss/images";
+@import "~bootstrap/scss/grid";
+@import "~bootstrap/scss/utilities/flex";
+//end
+
+@import "fonts";
+
+@import "variables";
+@import "function";
+@import "reset";
+@import "utilities";
+
+
 @import "components/title";
-@import "components/product";
-@import "components/cart";
+@import "components/icons";
+@import "components/header";
+@import "components/nav";
+@import "components/button";
+@import "components/listing";
+@import "components/up-sell";
+@import "components/recent-product";
+@import "components/footer";
+@import "components/address-popup";
 
-@import "pages/blog";
 @import "pages/home";
-@import "pages/singleProduct";
-@import "pages/about";
-@import "pages/concept";
-@import "pages/contact";
-@import "pages/account";
+@import "pages/category";
+@import "pages/single-product";
+@import "pages/lookbook";
+@import "pages/category-lookbook";
+@import "pages/cart";
 @import "pages/checkout";
-@import "pages/customer";
+@import "pages/about";
+@import "pages/information";
+@import "pages/account";
+@import "pages/myaccount";

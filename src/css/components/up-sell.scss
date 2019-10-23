@@ -1,0 +1,35 @@
+.up-sells {
+    position: relative;
+    overflow: hidden;
+    margin-top: 100px;
+    h2 {
+        margin-bottom: 50px;
+    }
+    .list-product-recent {
+        .product-title {
+            font-size: 14px;
+            line-height: 21px;
+        }
+    }
+}
+@include breakpoint3 {
+    .up-sells {
+        position: relative;
+        overflow: hidden;
+        margin-top: 40px;
+        h2 {
+            margin-bottom: 20px;
+            font-size: 22px;
+            line-height: 22px;
+        }
+        .list-product-recent {
+            .product-item {
+                margin-bottom: 0;
+            }
+            .product-title {
+                font-size: 12px;
+                line-height: 14px;
+            }
+        }
+    }
+}
